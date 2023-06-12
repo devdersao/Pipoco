@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estourando Balões</title>
+    <script src="jogo.js"></script>
+</head>
+<body onload="iniciaJogo()">
+    <div style="float:left; width:auto; height:500px; background:#FFF; border:solid 1px #A2A2A2; margin-right: 5px;">
+        <table border="0">
+            <tr>
+                <td>
+                    <img src="img/Balao.png" style="width: 100px; height: 100px;">
+                </td>
+                <td>
+                    <span id="baloes_inteiros" style="font-size: 30px;"></span>
+                </td>
+            </tr>
+        </table>
+    </br>
+    <table border="0">
+            <tr>
+                <td><img src="img/Pow.png" style="width: 100px; height: 100px;"></td>
+                <td>
+                    <span id="baloes_estourados" style="font-size: 30px;"></span>
+                    <audio id="audio" src="audio/Balao_Estourando.mp3"></audio>
+
+                </td>
+            </tr>
+        </table>
+    </br>
+        <table border="0" style="width: 100px; height: 132px;">
+            <tr>
+                <td style=" background-image: url('img/Cronometro2.png'); text-align: center;">
+                    <span id="cronometro" style="color:red; font-size: 30px;"></span>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div id="cenario" style="float:left; width:700px; height:500px; background-image: url(img/Cenario.jpg); background-position: bottom;">
+        </div>
+</body>
+</html>
